@@ -31,11 +31,15 @@
 
 #ADDB {
   margin-top: 100px;
+  padding: 3px 0;
+  outline: none;
   width: 25%;
 }
 
 #DELB {
   margin-top: 100px;
+  padding: 3px 0;
+  outline: none;
   width: 25%;
 }
 
