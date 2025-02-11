@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../style/style.css">
-     <title>To Do List</title>
-</head>
-<body>
-     <section class="container">
-          <h1 class="conatainer_text">To Do List ...</h1>
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="../style/style.css">
+          <title>To Do List</title>
+     </head>
+     <body>
+          <section class="container">
+               <h1 class="conatainer_text">To Do List ...</h1>
 
-          <div class="task_wrapper">
-               <input id="Input" type="text" placeholder="Enter New Task..." />
-               <ul id="UL"></ul>
-               <div class="button_wrapper">
-                    <button id="ADDB">add</button>
-                    <button id="DELB">delete</button>
+               <div class="task_wrapper">
+                    <input id="Input" type="text"
+                         placeholder="Enter New Task..." />
+                    <div id="tasks">
+                         <ul id="UL"></ul>
+                    </div>
+
+                    <div class="button_wrapper">
+                         <button id="ADDB">add</button>
+                         <button id="DELB">delete</button>
+                    </div>
                </div>
-          </div>
-     </section>
+          </section>
 
-     <script src="../script/script.js"></script>
-</body>
+          <script src="../script/script.js"></script>
+     </body>
 </html>
