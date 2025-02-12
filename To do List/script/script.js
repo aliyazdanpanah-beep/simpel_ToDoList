@@ -1,15 +1,33 @@
-let Input = document.getElementById("Input");
-let ADDB = document.getElementById("ADDB");
-let DELB = document.getElementById("DELB");
+// انتخاب المان‌های مورد نیاز
+const input = document.getElementById('Input'); // اینپوت
+const addButton = document.getElementById('ADDB'); // دکمه Add
+const deleteButton = document.getElementById('DELB'); // دکمه Delete
+const ul = document.getElementById('UL'); // لیست
 
-ADDB.onclick = () => {
-  const INPV = Input.value;
-  if (INPV == "") {
-    let ListItem = document.createElement("li");
-    let TaskList = document.querySelector("#tasks ul");
-    TaskList.appendChild(ListItem);
-    ListItem.textContent = INPV;
-  } else {
-    alert("something wrong");
-  }
-};
+// اضافه کردن رویداد کلیک به دکمه Add
+addButton.addEventListener('click', function () {
+    // گرفتن مقدار اینپوت
+    const taskText = input.value.trim();
+
+    // اگر اینپوت خالی نبود
+    if (taskText !== '') {
+        // ایجاد یک آیتم جدید برای لیست
+        const li = document.createElement('li');
+        li.textContent = taskText;
+
+        // اضافه کردن آیتم به لیست
+        ul.appendChild(li);
+
+        // خالی کردن اینپوت
+        input.value = '';
+    } else {
+        // اگر اینپوت خالی بود، به کاربر هشدار بده
+        alert('لطفاً یک تسک وارد کنید!');
+    }
+});
+
+// اضافه کردن رویداد کلیک به دکمه Delete
+deleteButton.addEventListener('click', function () {
+    // پاک کردن تمامی آیتم‌های لیست
+    ul.innerHTML = '';
+});
