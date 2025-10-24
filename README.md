@@ -1,2 +1,2 @@
 # simpel_ToDoList
- that file is just simpel to do list 
+ that file is just simpel to do list for format
